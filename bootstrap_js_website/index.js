@@ -62,7 +62,7 @@ function addCardfun(){
     ${title}
   </div>
   <div id="icon">
-  <button id="button"  onClick="inc_dec(${id},'Decrement')"><i class="fa-solid fa-minus change-value" id="minus-icon" ></i></button>
+  <button id="button"  onClick="inc_dec(${id},'Decrement')"  ${count === 1 ? 'disabled' : ''}><i class="fa-solid fa-minus  ${count === 1 ? '' : 'change-value'} " id="minus-icon" ></i></button>
   
   </div>
   <div id="quantity">
