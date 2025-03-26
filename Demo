@@ -1,0 +1,20 @@
+function minusButtonDisbale(){
+    addCard = addCard.map((item) => {
+  // Handle disabling the minus button if count is 1
+  const minusButton = document.getElementById('minus-icon');
+  if (item.count === 1) {
+      minusButton.disabled = true; // Disable the button
+      minusButton.style.pointerEvents = 'none'; // Optional: Prevent clicks
+      minusButton.style.opacity = '0.5'; // Optional: Change the icon's appearance
+  } else {
+      minusButton.disabled = false; // Enable the button
+      minusButton.style.pointerEvents = 'auto'; // Enable clicks
+      minusButton.style.opacity = '1'; // Reset opacity
+  }
+    })
+    addCardfun();
+  }
+  
+  minusButtonDisbale();
+  addCardfun();
+  
